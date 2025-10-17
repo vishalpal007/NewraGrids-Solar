@@ -99,7 +99,7 @@ const About = () => {
     return (
         <div className="min-h-screen bg-white">
             {/* Enhanced Hero Section */}
-            <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center bg-gradient-to-r from-blue-900/80 to-blue-700/80">
+            <section className="relative h-[60vh] sm:h-[70vh] min-h-[500px] sm:min-h-[600px] flex items-center justify-center bg-gradient-to-r from-blue-900/80 to-blue-700/80">
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
                     style={{
@@ -108,107 +108,107 @@ const About = () => {
                 />
                 <div className="absolute inset-0 bg-black/40 z-1"></div>
 
-                <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-                    <div className="inline-flex items-center px-4 py-2 rounded-full bg-yellow-500/20 border border-yellow-400/30 text-yellow-300 text-sm font-semibold backdrop-blur-sm mb-6">
+                <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 sm:px-6">
+                    <div className="inline-flex items-center px-3 py-1 sm:px-4 sm:py-2 rounded-full bg-yellow-500/20 border border-yellow-400/30 text-yellow-300 text-xs sm:text-sm font-semibold backdrop-blur-sm mb-4 sm:mb-6">
                         About NewRa Grids
                     </div>
-                    <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
                         Powering a <span className="text-yellow-400">Brighter</span> Future
                     </h1>
-                    <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-100 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed">
                         Leading the solar energy revolution with innovative solutions, unmatched expertise,
                         and a commitment to sustainable energy for generations to come.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                         <Link
                             to="/contact"
-                            className="bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold text-lg px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                            className="bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold text-base sm:text-lg px-6 py-3 sm:px-8 sm:py-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
                         >
                             Get Your Free Quote
                         </Link>
                         <Link
                             to="/calculator"
-                            className="border-2 border-white text-white hover:bg-white hover:text-blue-900 font-bold text-lg px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105"
+                            className="border-2 border-white text-white hover:bg-white hover:text-blue-900 font-bold text-base sm:text-lg px-6 py-3 sm:px-8 sm:py-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-center"
                         >
                             Calculate Savings
                         </Link>
                     </div>
                 </div>
 
-                <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-                    <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-                        <div className="w-1 h-3 bg-white rounded-full mt-2"></div>
+                <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                    <div className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-white rounded-full flex justify-center">
+                        <div className="w-1 h-2 sm:h-3 bg-white rounded-full mt-2"></div>
                     </div>
                 </div>
             </section>
 
             {/* Stats Bar */}
-            <section className="bg-white py-12 shadow-lg -mt-20 relative z-20 mx-8 rounded-2xl">
+            <section className="bg-white py-8 sm:py-12 shadow-lg -mt-16 sm:-mt-20 relative z-20 mx-4 sm:mx-8 rounded-xl sm:rounded-2xl">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 text-center">
                         <div className="text-center">
-                            <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">2,500+</div>
-                            <div className="text-gray-600 font-semibold">Solar Installations</div>
+                            <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-blue-600 mb-1 sm:mb-2">2,500+</div>
+                            <div className="text-gray-600 font-semibold text-xs sm:text-sm">Solar Installations</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2">45MW+</div>
-                            <div className="text-gray-600 font-semibold">Total Capacity</div>
+                            <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-green-600 mb-1 sm:mb-2">45MW+</div>
+                            <div className="text-gray-600 font-semibold text-xs sm:text-sm">Total Capacity</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-3xl md:text-4xl font-bold text-orange-600 mb-2">$8.5M+</div>
-                            <div className="text-gray-600 font-semibold">Customer Savings</div>
+                            <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-orange-600 mb-1 sm:mb-2">$8.5M+</div>
+                            <div className="text-gray-600 font-semibold text-xs sm:text-sm">Customer Savings</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-3xl md:text-4xl font-bold text-purple-600 mb-2">15,000+</div>
-                            <div className="text-gray-600 font-semibold">Tons CO₂ Reduced</div>
+                            <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-purple-600 mb-1 sm:mb-2">15,000+</div>
+                            <div className="text-gray-600 font-semibold text-xs sm:text-sm">Tons CO₂ Reduced</div>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* Enhanced Journey/Timeline Section */}
-            <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+            <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-blue-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-600 text-sm font-semibold mb-4">
+                    <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+                        <div className="inline-flex items-center px-3 py-1 rounded-full bg-blue-100 text-blue-600 text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
                             Our Journey
                         </div>
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-3 sm:mb-4">
                             Building a Sustainable Future
                         </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                        <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
                             From visionary beginnings to industry leadership - our journey of innovation and growth
                         </p>
                     </div>
 
                     <div className="relative">
                         {/* Main Timeline Line */}
-                        <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-blue-500 to-green-500 h-full hidden lg:block"></div>
+                        <div className="absolute left-4 sm:left-6 lg:left-1/2 transform lg:-translate-x-1/2 w-1 bg-gradient-to-b from-blue-500 to-green-500 h-full hidden sm:block"></div>
 
-                        <div className="space-y-16 lg:space-y-0">
+                        <div className="space-y-8 sm:space-y-12 lg:space-y-16">
                             {milestones.map((milestone, index) => (
                                 <div key={index} className={`relative lg:flex lg:items-center lg:justify-between ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
                                     {/* Content Card */}
-                                    <div className={`lg:w-5/12 mb-8 lg:mb-0 ${index % 2 === 0 ? 'lg:pr-12' : 'lg:pl-12'}`}>
-                                        <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
-                                            <div className="flex items-start space-x-4 mb-4">
-                                                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center">
-                                                    <span className="text-2xl text-white">{milestone.icon}</span>
+                                    <div className={`lg:w-5/12 mb-6 lg:mb-0 ${index % 2 === 0 ? 'lg:pr-8 xl:pr-12' : 'lg:pl-8 xl:pl-12'}`}>
+                                        <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                                            <div className="flex items-start space-x-3 sm:space-x-4 mb-4">
+                                                <div className="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl sm:rounded-2xl flex items-center justify-center">
+                                                    <span className="text-xl sm:text-2xl text-white">{milestone.icon}</span>
                                                 </div>
-                                                <div>
-                                                    <div className="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-2">
+                                                <div className="flex-1">
+                                                    <div className="inline-block px-2 py-1 sm:px-3 sm:py-1 bg-blue-100 text-blue-600 rounded-full text-xs sm:text-sm font-semibold mb-2">
                                                         {milestone.year}
                                                     </div>
-                                                    <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                                                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 mb-2">
                                                         {milestone.title}
                                                     </h3>
                                                 </div>
                                             </div>
-                                            <p className="text-gray-600 mb-4 leading-relaxed">
+                                            <p className="text-gray-600 text-sm sm:text-base mb-3 sm:mb-4 leading-relaxed">
                                                 {milestone.description}
                                             </p>
-                                            <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-xl p-4 border-l-4 border-blue-500">
-                                                <p className="text-blue-700 font-semibold text-sm">
+                                            <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-lg sm:rounded-xl p-3 sm:p-4 border-l-4 border-blue-500">
+                                                <p className="text-blue-700 font-semibold text-xs sm:text-sm">
                                                     {milestone.achievement}
                                                 </p>
                                             </div>
@@ -216,21 +216,21 @@ const About = () => {
                                     </div>
 
                                     {/* Timeline Center Dot - Visible on desktop */}
-                                    <div className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-white border-4 border-blue-500 rounded-full z-10 items-center justify-center">
-                                        <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                    <div className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 w-6 h-6 sm:w-8 sm:h-8 bg-white border-4 border-blue-500 rounded-full z-10 items-center justify-center">
+                                        <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-500 rounded-full"></div>
                                     </div>
 
                                     {/* Year Marker - Visible on desktop */}
                                     <div className={`hidden lg:block lg:w-2/12 text-center ${index % 2 === 0 ? 'lg:order-3' : 'lg:order-1'}`}>
-                                        <div className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg">
+                                        <div className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-full text-base sm:text-lg font-bold shadow-lg">
                                             {milestone.year}
                                         </div>
                                     </div>
 
                                     {/* Mobile Timeline */}
-                                    <div className="lg:hidden flex items-center space-x-4 mb-6">
-                                        <div className="flex-shrink-0 w-4 h-4 bg-blue-500 rounded-full border-4 border-white shadow"></div>
-                                        <div className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-4 py-2 rounded-full text-sm font-bold">
+                                    <div className="lg:hidden flex items-center space-x-3 sm:space-x-4 mb-4">
+                                        <div className="flex-shrink-0 w-3 h-3 sm:w-4 sm:h-4 bg-blue-500 rounded-full border-2 sm:border-4 border-white shadow"></div>
+                                        <div className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold">
                                             {milestone.year}
                                         </div>
                                     </div>
@@ -239,10 +239,10 @@ const About = () => {
                         </div>
 
                         {/* Starting and Ending Elements */}
-                        <div className="text-center mt-12">
-                            <div className="inline-flex items-center space-x-4 bg-white rounded-2xl px-8 py-4 shadow-lg border border-gray-100">
-                                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                                <span className="text-gray-700 font-semibold">Continuing our journey towards a sustainable future</span>
+                        <div className="text-center mt-8 sm:mt-12">
+                            <div className="inline-flex items-center space-x-2 sm:space-x-4 bg-white rounded-xl sm:rounded-2xl px-4 py-3 sm:px-6 sm:py-4 shadow-lg border border-gray-100">
+                                <div className="w-2 h-2 sm:w-3 sm:h-3 bg-green-500 rounded-full animate-pulse"></div>
+                                <span className="text-gray-700 font-semibold text-sm sm:text-base">Continuing our journey towards a sustainable future</span>
                             </div>
                         </div>
                     </div>
@@ -250,22 +250,22 @@ const About = () => {
             </section>
 
             {/* Why Choose NewRa Grids */}
-            <section className="py-20 bg-white">
+            <section className="py-12 sm:py-16 lg:py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid lg:grid-cols-2 gap-12 items-center">
+                    <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
                         <div>
-                            <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-600 text-sm font-semibold mb-4">
+                            <div className="inline-flex items-center px-3 py-1 rounded-full bg-blue-100 text-blue-600 text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
                                 Why We're Different
                             </div>
-                            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4 sm:mb-6">
                                 Why Choose <span className="text-blue-600">NewRa Grids</span>?
                             </h2>
-                            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                            <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 leading-relaxed">
                                 We're not just another solar company. We're your partners in energy independence,
                                 combining cutting-edge technology with unparalleled service excellence to deliver
                                 the best solar experience in the industry.
                             </p>
-                            <div className="space-y-4">
+                            <div className="space-y-3 sm:space-y-4">
                                 {[
                                     "Advanced solar technology with 22.8%+ efficiency",
                                     "Competitive pricing with premium quality guarantee",
@@ -274,16 +274,16 @@ const About = () => {
                                     "25-year performance warranty included",
                                     "Local expert installation teams"
                                 ].map((feature, index) => (
-                                    <div key={index} className="flex items-center space-x-3">
-                                        <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                                            <span className="text-white text-sm">✓</span>
+                                    <div key={index} className="flex items-center space-x-2 sm:space-x-3">
+                                        <div className="w-5 h-5 sm:w-6 sm:h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                            <span className="text-white text-xs sm:text-sm">✓</span>
                                         </div>
-                                        <span className="text-gray-700">{feature}</span>
+                                        <span className="text-gray-700 text-sm sm:text-base">{feature}</span>
                                     </div>
                                 ))}
                             </div>
                         </div>
-                        <div className="grid grid-cols-2 gap-6">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                             {[
                                 {
                                     icon: "🚀",
@@ -306,10 +306,10 @@ const About = () => {
                                     description: "24/7 monitoring & maintenance"
                                 }
                             ].map((feature, index) => (
-                                <div key={index} className="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
-                                    <div className="text-4xl mb-4">{feature.icon}</div>
-                                    <h3 className="text-lg font-bold text-gray-800 mb-2">{feature.title}</h3>
-                                    <p className="text-gray-600 text-sm">{feature.description}</p>
+                                <div key={index} className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                                    <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">{feature.icon}</div>
+                                    <h3 className="text-base sm:text-lg font-bold text-gray-800 mb-1 sm:mb-2">{feature.title}</h3>
+                                    <p className="text-gray-600 text-xs sm:text-sm">{feature.description}</p>
                                 </div>
                             ))}
                         </div>
@@ -318,29 +318,29 @@ const About = () => {
             </section>
 
             {/* Mission & Vision */}
-            <section className="py-20 bg-gray-50">
+            <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid lg:grid-cols-2 gap-12">
+                    <div className="grid lg:grid-cols-2 gap-8 sm:gap-12">
                         {/* Mission */}
                         <div className="relative">
-                            <div className="bg-white rounded-3xl p-8 h-full shadow-lg border border-gray-100">
-                                <div className="flex items-center mb-6">
-                                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mr-4">
-                                        <span className="text-3xl text-white">🎯</span>
+                            <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 h-full shadow-lg border border-gray-100">
+                                <div className="flex items-center mb-4 sm:mb-6">
+                                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl sm:rounded-2xl flex items-center justify-center mr-3 sm:mr-4">
+                                        <span className="text-2xl sm:text-3xl text-white">🎯</span>
                                     </div>
                                     <div>
-                                        <h2 className="text-2xl font-bold text-gray-800">Our Mission</h2>
-                                        <p className="text-blue-600 font-semibold">Driving Solar Adoption</p>
+                                        <h2 className="text-xl sm:text-2xl font-bold text-gray-800">Our Mission</h2>
+                                        <p className="text-blue-600 font-semibold text-sm sm:text-base">Driving Solar Adoption</p>
                                     </div>
                                 </div>
-                                <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                                <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
                                     To democratize access to clean energy by making solar power affordable,
                                     reliable, and accessible to every homeowner and business. We're committed
                                     to accelerating the transition to renewable energy.
                                 </p>
-                                <div className="bg-blue-50 rounded-xl p-4 border-l-4 border-blue-500">
-                                    <h4 className="font-semibold text-blue-800 mb-2">Our Promise:</h4>
-                                    <ul className="text-blue-700 space-y-1 text-sm">
+                                <div className="bg-blue-50 rounded-lg sm:rounded-xl p-3 sm:p-4 border-l-4 border-blue-500">
+                                    <h4 className="font-semibold text-blue-800 mb-1 sm:mb-2 text-sm sm:text-base">Our Promise:</h4>
+                                    <ul className="text-blue-700 space-y-1 text-xs sm:text-sm">
                                         <li>• Zero-down financing options available</li>
                                         <li>• 25-year comprehensive performance warranty</li>
                                         <li>• Price match guarantee on all quotes</li>
@@ -352,24 +352,24 @@ const About = () => {
 
                         {/* Vision */}
                         <div className="relative">
-                            <div className="bg-white rounded-3xl p-8 h-full shadow-lg border border-gray-100">
-                                <div className="flex items-center mb-6">
-                                    <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mr-4">
-                                        <span className="text-3xl text-white">🔭</span>
+                            <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 h-full shadow-lg border border-gray-100">
+                                <div className="flex items-center mb-4 sm:mb-6">
+                                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl sm:rounded-2xl flex items-center justify-center mr-3 sm:mr-4">
+                                        <span className="text-2xl sm:text-3xl text-white">🔭</span>
                                     </div>
                                     <div>
-                                        <h2 className="text-2xl font-bold text-gray-800">Our Vision</h2>
-                                        <p className="text-green-600 font-semibold">Sustainable Future</p>
+                                        <h2 className="text-xl sm:text-2xl font-bold text-gray-800">Our Vision</h2>
+                                        <p className="text-green-600 font-semibold text-sm sm:text-base">Sustainable Future</p>
                                     </div>
                                 </div>
-                                <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                                <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
                                     To create a world where every building generates its own clean energy,
                                     where communities are energy-independent, and where future generations
                                     inherit a healthier, more sustainable planet.
                                 </p>
-                                <div className="bg-green-50 rounded-xl p-4 border-l-4 border-green-500">
-                                    <h4 className="font-semibold text-green-800 mb-2">2030 Goals:</h4>
-                                    <ul className="text-green-700 space-y-1 text-sm">
+                                <div className="bg-green-50 rounded-lg sm:rounded-xl p-3 sm:p-4 border-l-4 border-green-500">
+                                    <h4 className="font-semibold text-green-800 mb-1 sm:mb-2 text-sm sm:text-base">2030 Goals:</h4>
+                                    <ul className="text-green-700 space-y-1 text-xs sm:text-sm">
                                         <li>• 1 million homes powered by solar energy</li>
                                         <li>• Community solar programs nationwide</li>
                                         <li>• Smart grid integration technology</li>
@@ -383,25 +383,25 @@ const About = () => {
             </section>
 
             {/* Core Values */}
-            <section className="py-20 bg-white">
+            <section className="py-12 sm:py-16 lg:py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-3 sm:mb-4">
                             Our Core Values
                         </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                        <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
                             The guiding principles that shape everything we do at NewRa Grids
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
                         {values.map((value, index) => (
-                            <div key={index} className="group text-center bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
-                                <div className="w-20 h-20 bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:from-blue-200 group-hover:to-blue-100 transition-all duration-300">
-                                    <span className="text-3xl">{value.icon}</span>
+                            <div key={index} className="group text-center bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+                                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:from-blue-200 group-hover:to-blue-100 transition-all duration-300">
+                                    <span className="text-2xl sm:text-3xl">{value.icon}</span>
                                 </div>
-                                <h3 className="text-xl font-bold text-gray-800 mb-4">{value.title}</h3>
-                                <p className="text-gray-600 leading-relaxed">{value.description}</p>
+                                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4">{value.title}</h3>
+                                <p className="text-gray-600 text-sm sm:text-base leading-relaxed">{value.description}</p>
                             </div>
                         ))}
                     </div>
@@ -409,23 +409,23 @@ const About = () => {
             </section>
 
             {/* Certifications & Team */}
-            <section className="py-20 bg-gray-50">
+            <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid lg:grid-cols-3 gap-12">
+                    <div className="grid lg:grid-cols-3 gap-8 sm:gap-12">
                         {/* Certifications */}
                         <div className="lg:col-span-1">
-                            <div className="bg-white rounded-3xl p-8 shadow-lg sticky top-8 border border-gray-100">
-                                <h2 className="text-2xl font-bold text-gray-800 mb-6">
+                            <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-lg lg:sticky lg:top-8 border border-gray-100">
+                                <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 sm:mb-6">
                                     Certifications & Credentials
                                 </h2>
-                                <p className="text-gray-600 mb-6">
+                                <p className="text-gray-600 text-sm sm:text-base mb-4 sm:mb-6">
                                     Trust the experts - our credentials speak for themselves
                                 </p>
-                                <div className="grid grid-cols-2 gap-4">
+                                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-3 sm:gap-4">
                                     {certifications.map((cert, index) => (
-                                        <div key={index} className="text-center bg-gradient-to-br from-blue-50 to-white rounded-xl p-4 hover:from-blue-100 transition-all duration-300 border border-blue-100">
-                                            <div className="text-2xl mb-2">{cert.icon}</div>
-                                            <p className="text-sm font-semibold text-gray-800">{cert.name}</p>
+                                        <div key={index} className="text-center bg-gradient-to-br from-blue-50 to-white rounded-lg sm:rounded-xl p-3 sm:p-4 hover:from-blue-100 transition-all duration-300 border border-blue-100">
+                                            <div className="text-xl sm:text-2xl mb-1 sm:mb-2">{cert.icon}</div>
+                                            <p className="text-xs sm:text-sm font-semibold text-gray-800">{cert.name}</p>
                                         </div>
                                     ))}
                                 </div>
@@ -434,32 +434,32 @@ const About = () => {
 
                         {/* Team */}
                         <div className="lg:col-span-2">
-                            <div className="text-center mb-12">
-                                <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                            <div className="text-center mb-8 sm:mb-12">
+                                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-3 sm:mb-4">
                                     Meet Our Expert Team
                                 </h2>
-                                <p className="text-xl text-gray-600">
+                                <p className="text-base sm:text-lg lg:text-xl text-gray-600">
                                     Our team of solar experts brings decades of combined experience in renewable energy,
                                     engineering, and customer service.
                                 </p>
                             </div>
 
-                            <div className="grid sm:grid-cols-2 gap-8">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
                                 {teamMembers.map((member, index) => (
-                                    <div key={index} className="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
-                                        <div className="flex items-start space-x-4">
-                                            <div className="text-5xl flex-shrink-0">{member.image}</div>
+                                    <div key={index} className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                                        <div className="flex items-start space-x-3 sm:space-x-4">
+                                            <div className="text-4xl sm:text-5xl flex-shrink-0">{member.image}</div>
                                             <div className="flex-1">
-                                                <h3 className="text-xl font-bold text-gray-800 mb-1">
+                                                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-1">
                                                     {member.name}
                                                 </h3>
-                                                <p className="text-blue-600 font-semibold mb-3">
+                                                <p className="text-blue-600 font-semibold text-sm sm:text-base mb-2 sm:mb-3">
                                                     {member.role}
                                                 </p>
-                                                <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                                                <p className="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">
                                                     {member.bio}
                                                 </p>
-                                                <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-lg p-3 border-l-4 border-blue-500">
+                                                <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-lg p-2 sm:p-3 border-l-4 border-blue-500">
                                                     <p className="text-blue-800 text-xs font-semibold">{member.expertise}</p>
                                                 </div>
                                             </div>
@@ -473,30 +473,30 @@ const About = () => {
             </section>
 
             {/* Final CTA */}
-            <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+            <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">
                         Ready to Power Your Future?
                     </h2>
-                    <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-base sm:text-lg lg:text-xl text-blue-100 mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">
                         Join thousands of satisfied customers who have made the switch to clean,
                         affordable solar energy with NewRa Grids.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                         <Link
                             to="/contact"
-                            className="bg-white text-blue-600 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                            className="bg-white text-blue-600 hover:bg-gray-100 font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
                         >
                             Get Free Consultation
                         </Link>
                         <Link
                             to="/calculator"
-                            className="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 transform hover:scale-105"
+                            className="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg transition-all duration-300 transform hover:scale-105 text-center"
                         >
                             Calculate Your Savings
                         </Link>
                     </div>
-                    <div className="mt-8 text-blue-200 text-sm">
+                    <div className="mt-6 sm:mt-8 text-blue-200 text-xs sm:text-sm">
                         <p>No obligation • Free assessment • 30-minute consultation</p>
                     </div>
                 </div>
