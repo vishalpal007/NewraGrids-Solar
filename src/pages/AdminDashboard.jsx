@@ -92,8 +92,8 @@ const AdminDashboard = () => {
         )
     }
 
-    if (error) {
-        return (
+    {
+        error && (
             <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-blue-50/30 dark:from-gray-900 dark:to-gray-800">
                 <div className="text-center max-w-md mx-auto p-6">
                     <div className="w-20 h-20 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -102,8 +102,12 @@ const AdminDashboard = () => {
                     <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
                         Failed to Load Data
                     </h2>
-                    <p className="text-gray-600 dark:text-gray-300 mb-6">
+                    <p className="text-gray-600 dark:text-gray-300 mb-6 break-words text-sm">
                         We couldn't load the contact submissions. Please check your connection and try again.
+                        <br />
+                        <code className="block mt-2 bg-gray-100 dark:bg-gray-800 p-2 rounded text-red-500 overflow-x-auto">
+                            {JSON.stringify(error, Object.getOwnPropertyNames(error), 2)}
+                        </code>
                     </p>
                     <div className="flex flex-col sm:flex-row gap-3 justify-center">
                         <button
@@ -123,6 +127,7 @@ const AdminDashboard = () => {
             </div>
         )
     }
+
 
     const totalSubmissions = Array.isArray(contacts) ? contacts.length : 0
     const todaysSubmissions = getTodaysSubmissions().length
